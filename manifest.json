@@ -1,8 +1,16 @@
 {
 "manifest_version": 2,
     "name": "Amazon Cuomo",
-    "description": "a chrome extension that replaces the phrase Andrew Cuomo with Amazon Cuomo, since he was willing to sell himself and his city for it",
+    "description": "Replaces the phrase Andrew Cuomo with Amazon Cuomo, since he was willing to sell himself and his city for it",
     "version": "0.1",
+    
+    "icons":
+    { 
+        "16": "images/cuomo16.png",
+        "48": "images/cuomo64.png",
+        "128": "images/cuomo128.png" 
+    },
+
     "content_scripts": [
         {
             "matches": [
@@ -14,4 +22,6 @@
             "run_at": "document_end"
         }
     ]
+
+
 }
